@@ -29,5 +29,10 @@ namespace ProjetoCeará
             newForm.Show();
 
         }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+        }
     }
 }

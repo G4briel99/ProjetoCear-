@@ -79,7 +79,7 @@ namespace ProjetoCeará
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            AbrirFormInPanel(new Clientes());
         }
         private void AbrirFormInPanel(object FormFilho)
         {
@@ -116,6 +116,11 @@ namespace ProjetoCeará
         private void button4_Click(object sender, EventArgs e)
         {
             AbrirFormInPanel(new Provedores());
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new Relatórios());
         }
     }
 }

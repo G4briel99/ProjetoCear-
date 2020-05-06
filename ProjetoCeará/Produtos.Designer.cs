@@ -31,9 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Produtos));
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btninserirprod = new System.Windows.Forms.Button();
-            this.btnexcluirprod = new System.Windows.Forms.Button();
             this.btneditarprod = new System.Windows.Forms.Button();
+            this.btnexcluirprod = new System.Windows.Forms.Button();
+            this.btninserirprod = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,43 +58,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(403, 256);
             this.dataGridView1.TabIndex = 6;
             // 
-            // btninserirprod
-            // 
-            this.btninserirprod.BackColor = System.Drawing.Color.OrangeRed;
-            this.btninserirprod.FlatAppearance.BorderSize = 0;
-            this.btninserirprod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btninserirprod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btninserirprod.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btninserirprod.ForeColor = System.Drawing.Color.White;
-            this.btninserirprod.Image = ((System.Drawing.Image)(resources.GetObject("btninserirprod.Image")));
-            this.btninserirprod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btninserirprod.Location = new System.Drawing.Point(183, 448);
-            this.btninserirprod.Name = "btninserirprod";
-            this.btninserirprod.Size = new System.Drawing.Size(107, 45);
-            this.btninserirprod.TabIndex = 7;
-            this.btninserirprod.Text = "Inserir";
-            this.btninserirprod.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btninserirprod.UseVisualStyleBackColor = false;
-            this.btninserirprod.Click += new System.EventHandler(this.btnInserir_Click);
-            // 
-            // btnexcluirprod
-            // 
-            this.btnexcluirprod.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnexcluirprod.FlatAppearance.BorderSize = 0;
-            this.btnexcluirprod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnexcluirprod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnexcluirprod.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexcluirprod.ForeColor = System.Drawing.Color.White;
-            this.btnexcluirprod.Image = ((System.Drawing.Image)(resources.GetObject("btnexcluirprod.Image")));
-            this.btnexcluirprod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnexcluirprod.Location = new System.Drawing.Point(479, 448);
-            this.btnexcluirprod.Name = "btnexcluirprod";
-            this.btnexcluirprod.Size = new System.Drawing.Size(107, 45);
-            this.btnexcluirprod.TabIndex = 8;
-            this.btnexcluirprod.Text = "Excluir";
-            this.btnexcluirprod.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnexcluirprod.UseVisualStyleBackColor = false;
-            // 
             // btneditarprod
             // 
             this.btneditarprod.BackColor = System.Drawing.Color.OrangeRed;
@@ -113,12 +77,60 @@
             this.btneditarprod.UseVisualStyleBackColor = false;
             this.btneditarprod.Click += new System.EventHandler(this.btneditarprod_Click);
             // 
+            // btnexcluirprod
+            // 
+            this.btnexcluirprod.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnexcluirprod.FlatAppearance.BorderSize = 0;
+            this.btnexcluirprod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnexcluirprod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnexcluirprod.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexcluirprod.ForeColor = System.Drawing.Color.White;
+            this.btnexcluirprod.Image = ((System.Drawing.Image)(resources.GetObject("btnexcluirprod.Image")));
+            this.btnexcluirprod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnexcluirprod.Location = new System.Drawing.Point(479, 448);
+            this.btnexcluirprod.Name = "btnexcluirprod";
+            this.btnexcluirprod.Size = new System.Drawing.Size(107, 45);
+            this.btnexcluirprod.TabIndex = 8;
+            this.btnexcluirprod.Text = "Excluir";
+            this.btnexcluirprod.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnexcluirprod.UseVisualStyleBackColor = false;
+            // 
+            // btninserirprod
+            // 
+            this.btninserirprod.BackColor = System.Drawing.Color.OrangeRed;
+            this.btninserirprod.FlatAppearance.BorderSize = 0;
+            this.btninserirprod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btninserirprod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btninserirprod.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btninserirprod.ForeColor = System.Drawing.Color.White;
+            this.btninserirprod.Image = ((System.Drawing.Image)(resources.GetObject("btninserirprod.Image")));
+            this.btninserirprod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btninserirprod.Location = new System.Drawing.Point(183, 448);
+            this.btninserirprod.Name = "btninserirprod";
+            this.btninserirprod.Size = new System.Drawing.Size(107, 45);
+            this.btninserirprod.TabIndex = 7;
+            this.btninserirprod.Text = "Inserir";
+            this.btninserirprod.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btninserirprod.UseVisualStyleBackColor = false;
+            this.btninserirprod.Click += new System.EventHandler(this.btnInserir_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox1.Location = new System.Drawing.Point(183, 89);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(403, 20);
+            this.textBox1.TabIndex = 12;
+            this.textBox1.Text = "BUSCAR...";
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
+            // 
             // Produtos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(700, 550);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btneditarprod);
             this.Controls.Add(this.btnexcluirprod);
             this.Controls.Add(this.btninserirprod);
@@ -139,5 +151,6 @@
         private System.Windows.Forms.Button btninserirprod;
         private System.Windows.Forms.Button btnexcluirprod;
         private System.Windows.Forms.Button btneditarprod;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

@@ -53,5 +53,10 @@ namespace ProjetoCeará
         {
             Application.Run(new Form2());
         }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
     }
 }

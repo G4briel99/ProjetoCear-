@@ -10,33 +10,28 @@ using System.Windows.Forms;
 
 namespace ProjetoCeará
 {
-    public partial class Vendas : Form
+    public partial class Clientes : Form
     {
-        public Vendas()
+        public Clientes()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var newForm = new FormVendas();
-            newForm.Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            var newForm = new FormVendas();
-            newForm.Show();
-        }
-
-        private void Vendas_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void textBox1_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var newForm = new FormClientes();
+            newForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var newForm = new FormClientes();
+            newForm.Show();
         }
     }
 }
