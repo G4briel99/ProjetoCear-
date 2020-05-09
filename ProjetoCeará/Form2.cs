@@ -16,6 +16,7 @@ namespace ProjetoCeará
         public Form2()
         {
             InitializeComponent();
+            customizeDesign();
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -121,6 +122,51 @@ namespace ProjetoCeará
         private void button6_Click(object sender, EventArgs e)
         {
             AbrirFormInPanel(new Relatórios());
+            ShowSubMenu(panelSubmenu);
+        }
+        private void customizeDesign()
+        {
+            panelSubmenu.Visible = false;
+            //..
+        }
+        private void hideSubMenu()
+        {
+            if (panelSubmenu.Visible == true)
+                panelSubmenu.Visible = false;
+        }
+        private void ShowSubMenu(Panel Submenu)
+        {
+            if (Submenu.Visible == false)
+            {
+                hideSubMenu();
+                Submenu.Visible = true;
+            }
+            else
+                Submenu.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //..
+            //Your codes
+            //..
+            hideSubMenu();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //..
+            //Your codes
+            //..
+            hideSubMenu();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            //..
+            //Your codes
+            //..
+            hideSubMenu();
         }
     }
 }

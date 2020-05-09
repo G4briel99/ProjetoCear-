@@ -36,10 +36,11 @@
             // 
             // lbhora
             // 
+            this.lbhora.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbhora.AutoSize = true;
             this.lbhora.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbhora.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lbhora.Location = new System.Drawing.Point(53, 131);
+            this.lbhora.Location = new System.Drawing.Point(149, 133);
             this.lbhora.Name = "lbhora";
             this.lbhora.Size = new System.Drawing.Size(249, 91);
             this.lbhora.TabIndex = 0;
@@ -47,10 +48,11 @@
             // 
             // lbdata
             // 
+            this.lbdata.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbdata.AutoSize = true;
             this.lbdata.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbdata.ForeColor = System.Drawing.Color.SlateGray;
-            this.lbdata.Location = new System.Drawing.Point(61, 262);
+            this.lbdata.Location = new System.Drawing.Point(84, 258);
             this.lbdata.Name = "lbdata";
             this.lbdata.Size = new System.Drawing.Size(126, 46);
             this.lbdata.TabIndex = 1;
